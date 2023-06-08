@@ -1,3 +1,5 @@
+Portfolio - https://gouravrana7-portfolioo-main-8btwxb.streamlit.app/
+
 🎓 I am Gourav Rana, a Data Analyst, Web Developer, Data Scientist. I am also Pursuing my Bachelor in Computer Science & Engineering and will graduate in mid-2023.
 
 👨‍💻 I am really enthusiastic about learning new technology. I learned Streamlit,Power Bi, Azure, Data Engineering ,Web Development, Dashboarding.. etc. I got started with several Internships related to my field and contributed in major projects in Internation Airport for their machines and AI Covid health Chat Bot. 
