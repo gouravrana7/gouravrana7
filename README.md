@@ -10,11 +10,9 @@
 
 ## 🧑‍💻 About Me
 
-🎓 **B.Tech in Computer Science & Engineering**
+🎓 **B.Tech in Computer Science & Engineering** — Specialized in Data Science
 
 💼 SDET | Data Scientist | Web Developer
-
-🔭 Currently working on **FastAPI Projects** & **Selenium Automation**
 
 🧠 Solving problems on **LeetCode** to sharpen DSA skills
 
@@ -30,21 +28,20 @@
 
 ### Languages
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ### Frameworks & Libraries
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 
 ### Data & Cloud
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 
@@ -57,16 +54,7 @@
 
 ## 🚀 Featured Projects
 
-| Project | Description | Tech |
-|---------|-------------|------|
-| [**Face Recognition**](https://github.com/gouravrana7/face-recognition) | Face recognition system | Python |
-| [**Covid Outbreak Analysis**](https://github.com/gouravrana7/Covid-outbreak-analysis-and-prediction-with-Power-Bi-dashboard) | Coronavirus analysis & prediction with Power BI | Jupyter, Power BI |
-| [**College Admin Web App**](https://github.com/gouravrana7/Web-App-for-College-Admin-Department) | Admin department management web app | HTML |
-| [**Inventory System**](https://github.com/gouravrana7/Inventory-System-Web-App) | Inventory management web app | Python |
-| [**Covid Chatbot**](https://github.com/gouravrana7/Covid-Chatbot) | AI chatbot for Covid FAQs | C# |
-| [**Bank Fraud Prediction**](https://github.com/gouravrana7/Bank_Fraud_Prediction) | ML model for predicting bank fraud | Jupyter |
-| [**Boston House Price**](https://github.com/gouravrana7/BOSTON-HOUSE-PRICE-PREDICTION) | House price prediction using regression | Jupyter |
-| [**Streamlit + Google Sheets**](https://github.com/gouravrana7/Autorefresh-Streamlit-with-Google-Sheets) | Auto-refreshing Streamlit with Google Sheets | Jupyter |
+[**Face Recognition**](https://github.com/gouravrana7/face-recognition) | [**Covid Outbreak Analysis & Prediction**](https://github.com/gouravrana7/Covid-outbreak-analysis-and-prediction-with-Power-Bi-dashboard) | [**College Admin Web App**](https://github.com/gouravrana7/Web-App-for-College-Admin-Department) | [**Inventory System Web App**](https://github.com/gouravrana7/Inventory-System-Web-App) | [**Covid Chatbot**](https://github.com/gouravrana7/Covid-Chatbot) | [**Bank Fraud Prediction**](https://github.com/gouravrana7/Bank_Fraud_Prediction) | [**Boston House Price Prediction**](https://github.com/gouravrana7/BOSTON-HOUSE-PRICE-PREDICTION) | [**Streamlit + Google Sheets**](https://github.com/gouravrana7/Autorefresh-Streamlit-with-Google-Sheets)
 
 ---
 
@@ -85,8 +73,6 @@
 ---
 
 ## 📊 GitHub Stats
-
-![Gourav's GitHub Stats](https://github-readme-stats.vercel.app/api?username=gouravrana7&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=gouravrana7&layout=compact&theme=tokyonight&hide_border=true)
 
