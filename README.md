@@ -1,4 +1,4 @@
-![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B%2C+I'm+Gourav+Rana;SDET+%7C+Data+Scientist+%7C+Web+Developer;Building+things+that+matter+%F0%9F%9A%80)
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B%2C+I'm+Gourav+Rana;SSDET+%7C+Data+Scientist+%7C+Web+Developer;Building+things+that+matter+%F0%9F%9A%80)
 
 ### SDET | Data Scientist | Web Developer
 
