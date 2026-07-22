@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Gourav%20Rana&fontSize=52&fontColor=fff&animation=fadeIn&fontAlignY=38" width="100%"/>
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B%2C+I'm+Gourav+Rana;SDET+%7C+Data+Scientist+%7C+Web+Developer;Building+things+that+matter+%F0%9F%9A%80)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=700&lines=SDET+%7C+Data+Scientist+%7C+Web+Developer;Building+things+that+matter+%F0%9F%9A%80)
 
 ### SDET · Data Scientist · Web Developer
 
@@ -35,7 +35,7 @@
 
 **Frameworks & Libraries**
 
-<img src="https://skillicons.dev/icons?i=django,fastapi,selenium&theme=dark" alt="Django, FastAPI, Selenium" />
+<img src="https://skillicons.dev/icons?i=django,fastapi,flask&theme=dark" alt="Django, FastAPI, Flask" />
 <br/>
 <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit" />
 <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas" />
@@ -49,7 +49,9 @@
 
 **Tools**
 
-<img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark" alt="Git, GitHub, VS Code" />
+<img src="https://skillicons.dev/icons?i=git,github,vscode,postman&theme=dark" alt="Git, GitHub, VS Code, Postman" />
+<br/>
+<img src="https://img.shields.io/badge/mabl-6C63FF?style=flat-square&logoColor=white" alt="mabl" />
 
 </div>
 
@@ -59,6 +61,7 @@
 
 | Project | Description | Tech |
 |---------|-------------|------|
+| [VidFix](https://github.com/gouravrana7/vidfix) | Open-source zero-syntax CLI to convert, generate, caption, and verify videos & images | Python, CLI |
 | [Face Recognition](https://github.com/gouravrana7/face-recognition) | Real-time face detection and recognition system | Python, OpenCV |
 | [Covid Outbreak Analysis & Prediction](https://github.com/gouravrana7/Covid-outbreak-analysis-and-prediction-with-Power-Bi-dashboard) | Outbreak analysis and forecasting with an interactive dashboard | Python, Power BI |
 | [Bank Fraud Prediction](https://github.com/gouravrana7/Bank_Fraud_Prediction) | ML model to detect fraudulent banking transactions | Python, scikit-learn |
