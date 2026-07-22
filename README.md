@@ -43,7 +43,7 @@
 
 **Tools**
 
-<img src="https://go-skill-icons.vercel.app/api/icons?i=git,github,vscode,postman&theme=dark" alt="Git, GitHub, VS Code, Postman" /> <img src="https://www.google.com/s2/favicons?domain=mabl.com&sz=64" height="48" alt="mabl" />
+<img src="https://go-skill-icons.vercel.app/api/icons?i=git,github,vscode,postman,linux&theme=dark" alt="Git, GitHub, VS Code, Postman, Linux" /> <img src="https://www.google.com/s2/favicons?domain=mabl.com&sz=64" height="48" alt="mabl" />
 
 </div>
 
