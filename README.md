@@ -39,7 +39,7 @@
 
 **Data & Cloud**
 
-<img src="https://go-skill-icons.vercel.app/api/icons?i=azure,aws&theme=dark" alt="Azure, AWS" /> <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" height="48" alt="Power BI" /> <img src="https://go-skill-icons.vercel.app/api/icons?i=jupyter&theme=dark" alt="Jupyter" />
+<img src="https://go-skill-icons.vercel.app/api/icons?i=azure,aws,docker&theme=dark" alt="Azure, AWS, Docker" /> <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" height="48" alt="Power BI" /> <img src="https://go-skill-icons.vercel.app/api/icons?i=jupyter&theme=dark" alt="Jupyter" />
 
 **Tools**
 
