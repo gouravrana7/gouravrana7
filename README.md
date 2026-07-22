@@ -58,8 +58,12 @@
 **Videos and images, exactly the way you need them** — zero-syntax CLI to convert, generate, caption, and verify media.
 
 [![Repo](https://img.shields.io/badge/gouravrana7%2Fvidfix-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gouravrana7/vidfix)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/gouravrana7/vidfix)
+[![PyPI](https://img.shields.io/pypi/v/vidfix?style=for-the-badge&logo=pypi&logoColor=white&color=3776AB&labelColor=1a1b27)](https://pypi.org/project/vidfix/)
 [![Stars](https://img.shields.io/github/stars/gouravrana7/vidfix?style=for-the-badge&color=6C63FF&labelColor=1a1b27)](https://github.com/gouravrana7/vidfix/stargazers)
+
+```bash
+uvx vidfix   # no install, no syntax — it talks to you
+```
 
 </div>
 
