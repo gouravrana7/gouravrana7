@@ -93,8 +93,6 @@ uvx vidfix   # no install, no syntax — it talks to you
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=gouravrana7&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=8B5CF6&icon_color=6C63FF" alt="GitHub Stats" height="170"/> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gouravrana7&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=8B5CF6" alt="Top Languages" height="170"/>
-
 ![GitHub Streak](https://streak-stats.demolab.com/?user=gouravrana7&theme=tokyonight&hide_border=true&background=1a1b27&ring=8B5CF6&fire=6C63FF&currStreakLabel=8B5CF6)
 
 </div>
