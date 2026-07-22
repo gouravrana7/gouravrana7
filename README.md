@@ -39,7 +39,7 @@
 
 **Data & Cloud**
 
-<img src="https://go-skill-icons.vercel.app/api/icons?i=azure,aws,powerbi,jupyter&theme=dark" alt="Azure, AWS, Power BI, Jupyter" />
+<img src="https://go-skill-icons.vercel.app/api/icons?i=azure,aws&theme=dark" alt="Azure, AWS" /> <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" height="48" alt="Power BI" /> <img src="https://go-skill-icons.vercel.app/api/icons?i=jupyter&theme=dark" alt="Jupyter" />
 
 **Tools**
 
@@ -59,7 +59,6 @@
 
 [![Repo](https://img.shields.io/badge/gouravrana7%2Fvidfix-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gouravrana7/vidfix)
 [![PyPI](https://img.shields.io/pypi/v/vidfix?style=for-the-badge&logo=pypi&logoColor=white&color=3776AB&labelColor=1a1b27)](https://pypi.org/project/vidfix/)
-[![Stars](https://img.shields.io/github/stars/gouravrana7/vidfix?style=for-the-badge&color=6C63FF&labelColor=1a1b27)](https://github.com/gouravrana7/vidfix/stargazers)
 
 ```bash
 uvx vidfix   # no install, no syntax — it talks to you
