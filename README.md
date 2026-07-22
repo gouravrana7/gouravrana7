@@ -31,27 +31,19 @@
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=python,js,html,css&theme=dark" alt="Python, JavaScript, HTML5, CSS3" />
+<img src="https://go-skill-icons.vercel.app/api/icons?i=python,js,html,css&theme=dark" alt="Python, JavaScript, HTML5, CSS3" />
 
 **Frameworks & Libraries**
 
-<img src="https://skillicons.dev/icons?i=django,fastapi,flask&theme=dark" alt="Django, FastAPI, Flask" />
-<br/>
-<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit" />
-<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas" />
+<img src="https://go-skill-icons.vercel.app/api/icons?i=django,fastapi,flask,streamlit,pandas&theme=dark" alt="Django, FastAPI, Flask, Streamlit, Pandas" />
 
 **Data & Cloud**
 
-<img src="https://skillicons.dev/icons?i=azure,aws&theme=dark" alt="Azure, AWS" />
-<br/>
-<img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI" />
-<img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter" />
+<img src="https://go-skill-icons.vercel.app/api/icons?i=azure,aws,powerbi,jupyter&theme=dark" alt="Azure, AWS, Power BI, Jupyter" />
 
 **Tools**
 
-<img src="https://skillicons.dev/icons?i=git,github,vscode,postman&theme=dark" alt="Git, GitHub, VS Code, Postman" />
-<br/>
-<img src="https://img.shields.io/badge/mabl-6C63FF?style=flat-square&logoColor=white" alt="mabl" />
+<img src="https://go-skill-icons.vercel.app/api/icons?i=git,github,vscode,postman&theme=dark" alt="Git, GitHub, VS Code, Postman" /> <img src="https://www.google.com/s2/favicons?domain=mabl.com&sz=64" height="48" alt="mabl" />
 
 </div>
 
@@ -59,9 +51,20 @@
 
 ## Featured Projects
 
+<div align="center">
+
+### ⭐ VidFix — Open Source
+
+**Videos and images, exactly the way you need them** — zero-syntax CLI to convert, generate, caption, and verify media.
+
+[![Repo](https://img.shields.io/badge/gouravrana7%2Fvidfix-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gouravrana7/vidfix)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://github.com/gouravrana7/vidfix)
+[![Stars](https://img.shields.io/github/stars/gouravrana7/vidfix?style=for-the-badge&color=6C63FF&labelColor=1a1b27)](https://github.com/gouravrana7/vidfix/stargazers)
+
+</div>
+
 | Project | Description | Tech |
 |---------|-------------|------|
-| [VidFix](https://github.com/gouravrana7/vidfix) | Open-source zero-syntax CLI to convert, generate, caption, and verify videos & images | Python, CLI |
 | [Face Recognition](https://github.com/gouravrana7/face-recognition) | Real-time face detection and recognition system | Python, OpenCV |
 | [Covid Outbreak Analysis & Prediction](https://github.com/gouravrana7/Covid-outbreak-analysis-and-prediction-with-Power-Bi-dashboard) | Outbreak analysis and forecasting with an interactive dashboard | Python, Power BI |
 | [Bank Fraud Prediction](https://github.com/gouravrana7/Bank_Fraud_Prediction) | ML model to detect fraudulent banking transactions | Python, scikit-learn |
@@ -99,7 +102,7 @@
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=gouravrana7&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&column=7" alt="GitHub Trophies"/>
+<img src="https://github-profile-trophy.vercel.app/?username=gouravrana7&theme=tokyonight&no-frame=true&margin-w=15&margin-h=15&column=4&row=2" alt="GitHub Trophies"/>
 
 </div>
 
