@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Gourav%20Rana&fontSize=52&fontColor=fff&animation=fadeIn&fontAlignY=38" width="100%"/>
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=700&lines=SDET+%7C+Data+Scientist+%7C+Web+Developer;Building+things+that+matter+%F0%9F%9A%80)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=700&lines=Building+things+that+matter+%F0%9F%9A%80)
 
 ### SDET · Data Scientist · Web Developer
 
@@ -93,19 +93,9 @@ uvx vidfix   # no install, no syntax — it talks to you
 
 <div align="center">
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=gouravrana7&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=8B5CF6)
+<img src="https://github-readme-stats.vercel.app/api?username=gouravrana7&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=8B5CF6&icon_color=6C63FF" alt="GitHub Stats" height="170"/> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gouravrana7&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27&title_color=8B5CF6" alt="Top Languages" height="170"/>
 
 ![GitHub Streak](https://streak-stats.demolab.com/?user=gouravrana7&theme=tokyonight&hide_border=true&background=1a1b27&ring=8B5CF6&fire=6C63FF&currStreakLabel=8B5CF6)
-
-</div>
-
----
-
-## GitHub Trophies
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=gouravrana7&theme=tokyonight&no-frame=true&margin-w=15&margin-h=15&column=4&row=2" alt="GitHub Trophies"/>
 
 </div>
 
