@@ -35,7 +35,7 @@
 
 **Frameworks & Libraries**
 
-<img src="https://go-skill-icons.vercel.app/api/icons?i=django,fastapi,flask,streamlit,pandas&theme=dark" alt="Django, FastAPI, Flask, Streamlit, Pandas" />
+<img src="https://go-skill-icons.vercel.app/api/icons?i=django,fastapi,streamlit,pandas&theme=dark" alt="Django, FastAPI, Streamlit, Pandas" />
 
 **Data & Cloud**
 
