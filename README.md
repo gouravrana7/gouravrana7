@@ -103,7 +103,7 @@ uvx vidfix   # no install, no syntax — it talks to you
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/gouravrana7/gouravrana7/output/activity-graph.svg" alt="Contribution Graph" width="100%"/>
+<img src="https://raw.githubusercontent.com/gouravrana7/gouravrana7/output/activity-graph.svg?v=2" alt="Contribution Graph" width="100%"/>
 
 </div>
 

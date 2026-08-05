@@ -88,6 +88,7 @@ export function render(days) {
     .label { fill: ${LABEL}; font-size: .75rem; line-height: 1; }
     .axis-title { fill: ${LABEL}; font-size: .75rem; }
     .grid { stroke: ${LABEL}; stroke-width: 1px; stroke-opacity: 0.3; stroke-dasharray: 2px; }
+    .area { stroke: none; fill: ${LINE}; fill-opacity: 0.1; }
     /* Resting state is the finished drawing, so the graph is still visible if a
        renderer ignores CSS animation. The keyframes only replay the reveal. */
     .line { fill: none; stroke: ${LINE}; stroke-width: 4px; stroke-dasharray: 5000; stroke-dashoffset: 0; animation: dash 5s ease-in-out forwards; }
@@ -106,6 +107,7 @@ ${pts.map((p, i) => (i % every || p.x > PLOT_R - 30 ? '' :
   <text class="label" x="${p.x.toFixed(1)}" y="${PLOT_B + 24}" text-anchor="middle">${label(p.date)}</text>`)).filter(Boolean).join('\n')}
   <text class="axis-title" x="${(PLOT_L + PLOT_R) / 2}" y="${H - 6}" text-anchor="middle">Days</text>
   <text class="axis-title" x="${-(PLOT_T + PLOT_B) / 2}" y="24" text-anchor="middle" transform="rotate(-90)">Contributions</text>
+  <path class="area" d="${smoothPath(pts)} L ${PLOT_R} ${PLOT_B} L ${PLOT_L} ${PLOT_B} Z"/>
   <path class="line" d="${smoothPath(pts)}"/>
 ${pts.map((p) => `  <line class="point" x1="${p.x.toFixed(1)}" y1="${p.y.toFixed(1)}" x2="${p.x.toFixed(1)}" y2="${p.y.toFixed(1)}"><title>${p.date}: ${p.contributionCount}</title></line>`).join('\n')}
 </svg>
@@ -135,6 +137,9 @@ function demo() {
   assert(svg.startsWith('<svg') && svg.includes('</svg>'), 'svg well-formed');
   assert((svg.match(/class="point"/g) ?? []).length === DAYS, 'one point per day');
   assert(svg.includes('Contributions') && svg.includes('>Days<'), 'axis titles present');
+  // Area must close on the baseline, or the fill leaks over the whole card.
+  assert(svg.includes(`class="area"`) && svg.includes(`L ${PLOT_L} ${PLOT_B} Z`), 'area closes on baseline');
+  assert(svg.indexOf('class="area"') < svg.indexOf('class="line"'), 'area drawn under the line');
   assert(!svg.includes('Contribution Graph'), 'no card title, README supplies the heading');
 
   const flat = render(days.map((d) => ({ ...d, contributionCount: 0 })));
