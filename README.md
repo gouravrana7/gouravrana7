@@ -103,7 +103,7 @@ uvx vidfix   # no install, no syntax — it talks to you
 
 <div align="center">
 
-<img src="https://ghchart.rshah.org/8B5CF6/gouravrana7" alt="Contribution Graph" width="100%"/>
+<img src="https://raw.githubusercontent.com/gouravrana7/gouravrana7/output/activity-graph.svg" alt="Contribution Graph" width="100%"/>
 
 </div>
 
@@ -113,7 +113,7 @@ uvx vidfix   # no install, no syntax — it talks to you
 
 <div align="center">
 
-<img src="https://github-profile-trophy-orcin-eta.vercel.app/?username=gouravrana7&theme=onedark&no-frame=true&no-bg=true&column=-1&margin-w=8&margin-h=8&title=-Stars,-Followers,-Issues" alt="GitHub Trophies" />
+<img src="https://github-profile-trophy-orcin-eta.vercel.app/?username=gouravrana7&theme=onedark&no-frame=true&no-bg=true&column=-1&margin-w=8&margin-h=8&title=-Stars,-Followers,-Issues,-Reviews" alt="GitHub Trophies" />
 
 </div>
 

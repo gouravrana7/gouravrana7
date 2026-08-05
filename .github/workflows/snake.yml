@@ -1,4 +1,4 @@
-name: Generate Contribution Snake
+name: Generate Profile Graphics
 
 on:
   schedule:
@@ -15,12 +15,21 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
       - uses: Platane/snk@v3
         with:
           github_user_name: gouravrana7
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Generate activity graph
+        run: |
+          mkdir -p dist
+          node .github/scripts/activity-graph.mjs gouravrana7 dist/activity-graph.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
