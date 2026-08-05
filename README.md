@@ -109,6 +109,16 @@ uvx vidfix   # no install, no syntax — it talks to you
 
 ---
 
+## Trophies
+
+<div align="center">
+
+<img src="https://github-profile-trophy-orcin-eta.vercel.app/?username=gouravrana7&theme=onedark&no-frame=true&no-bg=true&column=4&margin-w=10&margin-h=10" alt="GitHub Trophies" />
+
+</div>
+
+---
+
 ## Contribution Snake
 
 <div align="center">
