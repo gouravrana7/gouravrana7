@@ -27,6 +27,7 @@ jobs:
       - name: Generate activity graph
         run: |
           mkdir -p dist
+          sudo chown -R "$USER" dist   # snk runs in a container and leaves dist root-owned
           node .github/scripts/activity-graph.mjs gouravrana7 dist/activity-graph.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
