@@ -113,7 +113,7 @@ uvx vidfix   # no install, no syntax — it talks to you
 
 <div align="center">
 
-<img src="https://github-profile-trophy-orcin-eta.vercel.app/?username=gouravrana7&theme=onedark&no-frame=true&no-bg=true&column=4&margin-w=10&margin-h=10" alt="GitHub Trophies" />
+<img src="https://github-profile-trophy-orcin-eta.vercel.app/?username=gouravrana7&theme=onedark&no-frame=true&no-bg=true&column=-1&margin-w=8&margin-h=8&title=-Stars,-Followers,-Issues" alt="GitHub Trophies" />
 
 </div>
 
