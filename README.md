@@ -93,7 +93,7 @@ uvx vidfix   # no install, no syntax — it talks to you
 
 <div align="center">
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=gouravrana7&theme=tokyonight&hide_border=true&background=1a1b27&ring=8B5CF6&fire=6C63FF&currStreakLabel=8B5CF6)
+<img src="https://streak-stats.demolab.com/?user=gouravrana7&theme=tokyonight&hide_border=true&background=1a1b27&ring=8B5CF6&fire=6C63FF&currStreakLabel=8B5CF6&v=2" alt="GitHub Streak" />
 
 </div>
 
@@ -103,7 +103,7 @@ uvx vidfix   # no install, no syntax — it talks to you
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=gouravrana7&theme=tokyo-night&hide_border=true&bg_color=1a1b27&color=8B5CF6&line=6C63FF&point=A78BFA" alt="Contribution Graph" width="100%"/>
+<img src="https://ghchart.rshah.org/8B5CF6/gouravrana7" alt="Contribution Graph" width="100%"/>
 
 </div>
 
