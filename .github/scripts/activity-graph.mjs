@@ -2,12 +2,10 @@
 // Visual spec mirrors Ashutosh00710/github-readme-activity-graph (the vercel host
 // that is down for every user): 1200x420, dashed grid, axis titles, 4px animated
 // line, 10px round points. No card title — the README already has a heading.
-// Six months of daily points would smear those 10px dots into a band, so days are
-// bucketed into weeks. Same look, wider range.
 //
 // Run: node activity-graph.mjs <user> <out.svg>   |   self-check: node activity-graph.mjs --demo
 
-const DAYS = 183; // ~6 months
+const DAYS = 31; // upstream default window
 
 // Upstream card + chartist geometry.
 const W = 1200, H = 420;
@@ -43,19 +41,6 @@ async function fetchDays(user, token) {
   return days.slice(-DAYS);
 }
 
-// Whole weeks only — a partial trailing week would dip and read as a drop-off.
-export function toWeeks(days) {
-  const weeks = [];
-  for (let i = days.length % 7; i + 7 <= days.length; i += 7) {
-    const chunk = days.slice(i, i + 7);
-    weeks.push({
-      date: chunk[0].date,
-      contributionCount: chunk.reduce((sum, d) => sum + d.contributionCount, 0),
-    });
-  }
-  return weeks;
-}
-
 // Integer ticks starting at zero, like chartist's onlyInteger + low:0.
 function yTicks(max) {
   const step = Math.max(1, Math.ceil(max / 5));
@@ -66,12 +51,12 @@ function yTicks(max) {
   return ticks;
 }
 
-function toPoints(weeks, top) {
-  const span = Math.max(1, weeks.length - 1);
-  return weeks.map((w, i) => ({
+function toPoints(days, top) {
+  const span = Math.max(1, days.length - 1);
+  return days.map((d, i) => ({
     x: PLOT_L + (i * (PLOT_R - PLOT_L)) / span,
-    y: PLOT_B - (w.contributionCount / top) * (PLOT_B - PLOT_T),
-    ...w,
+    y: PLOT_B - (d.contributionCount / top) * (PLOT_B - PLOT_T),
+    ...d,
   }));
 }
 
@@ -89,13 +74,12 @@ const label = (iso) =>
   new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
 
 export function render(days) {
-  const weeks = toWeeks(days);
-  if (weeks.length < 2) throw new Error(`need at least 2 full weeks, got ${weeks.length}`);
+  if (days.length < 2) throw new Error(`need at least 2 days, got ${days.length}`);
 
-  const ticks = yTicks(Math.max(1, ...weeks.map((w) => w.contributionCount)));
+  const ticks = yTicks(Math.max(1, ...days.map((d) => d.contributionCount)));
   const top = ticks.at(-1);
-  const pts = toPoints(weeks, top);
-  // One x label per month or so; every week's date would collide.
+  const pts = toPoints(days, top);
+  // Every day's date would collide; label roughly every fourth.
   const every = Math.ceil(pts.length / 8);
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" fill="none">
@@ -120,10 +104,10 @@ ${ticks.map((v) => {
 ${pts.map((p, i) => (i % every || p.x > PLOT_R - 30 ? '' :
   `  <line class="grid" x1="${p.x.toFixed(1)}" y1="${PLOT_T}" x2="${p.x.toFixed(1)}" y2="${PLOT_B}"/>
   <text class="label" x="${p.x.toFixed(1)}" y="${PLOT_B + 24}" text-anchor="middle">${label(p.date)}</text>`)).filter(Boolean).join('\n')}
-  <text class="axis-title" x="${(PLOT_L + PLOT_R) / 2}" y="${H - 6}" text-anchor="middle">Weeks</text>
+  <text class="axis-title" x="${(PLOT_L + PLOT_R) / 2}" y="${H - 6}" text-anchor="middle">Days</text>
   <text class="axis-title" x="${-(PLOT_T + PLOT_B) / 2}" y="24" text-anchor="middle" transform="rotate(-90)">Contributions</text>
   <path class="line" d="${smoothPath(pts)}"/>
-${pts.map((p) => `  <line class="point" x1="${p.x.toFixed(1)}" y1="${p.y.toFixed(1)}" x2="${p.x.toFixed(1)}" y2="${p.y.toFixed(1)}"><title>week of ${p.date}: ${p.contributionCount}</title></line>`).join('\n')}
+${pts.map((p) => `  <line class="point" x1="${p.x.toFixed(1)}" y1="${p.y.toFixed(1)}" x2="${p.x.toFixed(1)}" y2="${p.y.toFixed(1)}"><title>${p.date}: ${p.contributionCount}</title></line>`).join('\n')}
 </svg>
 `;
 }
@@ -136,24 +120,21 @@ function demo() {
     contributionCount: i % 7,
   }));
 
-  const weeks = toWeeks(days);
-  assert(weeks.length === Math.floor(DAYS / 7), `expected ${Math.floor(DAYS / 7)} weeks`);
-  assert(weeks.every((w) => w.contributionCount === 21), 'each week sums its 7 days');
-  // A ragged tail must be dropped, not rendered as a fake dip.
-  assert(toWeeks(days.slice(0, 17)).length === 2, 'partial trailing week dropped');
-
   assert(yTicks(18).at(-1) >= 18, 'top tick covers max');
   assert(yTicks(18)[0] === 0, 'axis starts at zero');
   assert(yTicks(0).length >= 2, 'flat history still gets an axis');
 
-  const pts = toPoints(weeks, yTicks(21).at(-1));
+  const top = yTicks(6).at(-1);
+  const pts = toPoints(days, top);
   assert(pts.every((p, i) => i === 0 || p.x > pts[i - 1].x), 'x must increase');
   assert(pts.every((p) => p.y >= PLOT_T - 0.01 && p.y <= PLOT_B + 0.01), 'y within plot area');
+  assert(pts[0].x === PLOT_L && pts.at(-1).x === PLOT_R, 'series spans the full plot width');
+  assert(pts.find((p) => p.contributionCount === 0).y === PLOT_B, 'zero sits on the baseline');
 
   const svg = render(days);
   assert(svg.startsWith('<svg') && svg.includes('</svg>'), 'svg well-formed');
-  assert((svg.match(/class="point"/g) ?? []).length === weeks.length, 'one point per week');
-  assert(svg.includes('Contributions') && svg.includes('Weeks'), 'axis titles present');
+  assert((svg.match(/class="point"/g) ?? []).length === DAYS, 'one point per day');
+  assert(svg.includes('Contributions') && svg.includes('>Days<'), 'axis titles present');
   assert(!svg.includes('Contribution Graph'), 'no card title, README supplies the heading');
 
   const flat = render(days.map((d) => ({ ...d, contributionCount: 0 })));
