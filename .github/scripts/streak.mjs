@@ -11,6 +11,21 @@ const W = 495, H = 195;
 const COL = W / 3;
 const RING_CX = COL * 1.5, RING_CY = 74, RING_R = 40;
 
+// The middle column runs taller than the side columns (flame above the ring,
+// label and dates below it). Derive the side baselines from the middle block's
+// centre so all three columns sit on one axis instead of the sides riding high.
+const FIRE_H = 26;                                  // 24px glyph at scale 1.1
+const FIRE_TOP = RING_CY - RING_R - 15;             // flame straddles the ring
+const CURR_LABEL_Y = RING_CY + 66, CURR_DATE_Y = RING_CY + 88;
+const MID_TOP = FIRE_TOP, MID_BOT = CURR_DATE_Y + 4;
+const MID_CENTER = (MID_TOP + MID_BOT) / 2;
+
+// Side column: 28px number, then label and dates. Cap height ~20 above the
+// number's baseline, descender ~3 below the dates'.
+const NUM_CAP = 20, DATE_DESC = 3, LABEL_GAP = 28, DATE_GAP = 52;
+const SIDE_NUM_Y = MID_CENTER - (DATE_GAP + DATE_DESC - NUM_CAP) / 2;
+const SIDE_LABEL_Y = SIDE_NUM_Y + LABEL_GAP, SIDE_DATE_Y = SIDE_NUM_Y + DATE_GAP;
+
 // Colors from the README's original query string (theme=tokyonight with
 // background/ring/fire/currStreakLabel overridden, hide_border=true).
 const BG = '#1a1b27', RING = '#8B5CF6', FIRE = '#6C63FF';
@@ -111,9 +126,9 @@ export function render(days) {
 
   const panel = (cx, num, label, dates) => `
   <g>
-    <text class="num" x="${cx}" y="58">${num}</text>
-    <text class="label" x="${cx}" y="86">${label}</text>
-    <text class="date" x="${cx}" y="110">${dates}</text>
+    <text class="num" x="${cx}" y="${SIDE_NUM_Y}">${num}</text>
+    <text class="label" x="${cx}" y="${SIDE_LABEL_Y}">${label}</text>
+    <text class="date" x="${cx}" y="${SIDE_DATE_Y}">${dates}</text>
   </g>`;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" fill="none">
@@ -127,7 +142,6 @@ export function render(days) {
     .divider { stroke: ${DATE}; stroke-width: 1px; stroke-opacity: 0.3; }
     .ring { stroke: ${RING}; stroke-width: 5px; fill: none; }
     .fire { fill: ${FIRE}; }
-    .fire-inner { fill: ${BG}; }
   </style>
   <rect x="0" y="0" width="100%" height="100%" fill="${BG}"/>
   <line class="divider" x1="${COL}" y1="34" x2="${COL}" y2="${H - 34}"/>
@@ -137,9 +151,9 @@ ${panel(COL * 2.5, longest.length, 'Longest Streak', range(longest.start, longes
   <g>
     <circle class="ring" cx="${RING_CX}" cy="${RING_CY}" r="${RING_R}"/>
     <text class="num" x="${RING_CX}" y="${RING_CY + 10}">${curr.length}</text>
-    <text class="curr-label" x="${RING_CX}" y="${RING_CY + 66}">Current Streak</text>
-    <text class="date" x="${RING_CX}" y="${RING_CY + 88}">${range(curr.start, curr.end)}</text>
-    <g transform="translate(${RING_CX - 13}, ${RING_CY - RING_R - 15}) scale(1.1)">
+    <text class="curr-label" x="${RING_CX}" y="${CURR_LABEL_Y}">Current Streak</text>
+    <text class="date" x="${RING_CX}" y="${CURR_DATE_Y}">${range(curr.start, curr.end)}</text>
+    <g transform="translate(${RING_CX - 13}, ${FIRE_TOP}) scale(1.1)">
       <!-- Punches a hole in the ring so the flame sits on the ring, not over it. -->
       <rect x="0" y="9" width="24" height="10" fill="${BG}"/>
       <path class="fire" d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
@@ -171,6 +185,12 @@ function demo() {
   assert(longestStreak(mk([0, 0])).length === 0, 'flat history has no longest streak');
   // Ties must keep the first run, so the range matches the number shown.
   assert(longestStreak(mk([1, 1, 0, 1, 1])).start === '2026-01-01', 'first run wins a tie');
+
+  // The side columns rode high above the ring once; keep all three on one axis.
+  const sideCenter = ((SIDE_NUM_Y - NUM_CAP) + (SIDE_DATE_Y + DATE_DESC)) / 2;
+  assert(Math.abs(sideCenter - MID_CENTER) < 0.51, 'side columns off the middle axis');
+  assert(FIRE_TOP + FIRE_H > RING_CY - RING_R, 'flame must reach the ring');
+  assert(MID_BOT < H && SIDE_DATE_Y + DATE_DESC < H, 'content inside the card');
 
   assert(fmt('2026-08-15') === 'Aug 15', 'current year drops the year');
   assert(fmt('2025-10-20') === 'Oct 20, 2025', 'past year keeps the year');
