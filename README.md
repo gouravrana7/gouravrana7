@@ -93,7 +93,7 @@ uvx vidfix   # no install, no syntax — it talks to you
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com/?user=gouravrana7&theme=tokyonight&hide_border=true&background=1a1b27&ring=8B5CF6&fire=6C63FF&currStreakLabel=8B5CF6&v=2" alt="GitHub Streak" />
+<img src="https://raw.githubusercontent.com/gouravrana7/gouravrana7/output/streak.svg" alt="GitHub Streak" />
 
 </div>
 

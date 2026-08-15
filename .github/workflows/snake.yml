@@ -24,11 +24,12 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Generate activity graph
+      - name: Generate activity graph and streak card
         run: |
           mkdir -p dist
           sudo chown -R "$USER" dist   # snk runs in a container and leaves dist root-owned
           node .github/scripts/activity-graph.mjs gouravrana7 dist/activity-graph.svg
+          node .github/scripts/streak.mjs gouravrana7 dist/streak.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
