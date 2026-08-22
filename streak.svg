@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" fill="none">
+  <style>
+    svg { font-family: 'Segoe UI', Ubuntu, Sans-Serif; user-select: none; }
+    text { text-anchor: middle; }
+    .num { fill: #c9d1d9; font-size: 28px; font-weight: 700; }
+    .label { fill: #c9d1d9; font-size: 14px; font-weight: 700; }
+    .curr-label { fill: #8B5CF6; font-size: 14px; font-weight: 700; }
+    .date { fill: #8b949e; font-size: 12px; }
+    .divider { stroke: #8b949e; stroke-width: 1px; stroke-opacity: 0.3; }
+    .ring { stroke: #8B5CF6; stroke-width: 5px; fill: none; }
+    .fire { fill: #6C63FF; }
+  </style>
+  <rect x="0" y="0" width="100%" height="100%" fill="#1a1b27"/>
+  <line class="divider" x1="165" y1="34" x2="165" y2="161"/>
+  <line class="divider" x1="330" y1="34" x2="330" y2="161"/>
+
+  <g>
+    <text class="num" x="82.5" y="75">958</text>
+    <text class="label" x="82.5" y="103">Total Contributions</text>
+    <text class="date" x="82.5" y="127">Apr 9, 2021 - Present</text>
+  </g>
+
+  <g>
+    <text class="num" x="412.5" y="75">307</text>
+    <text class="label" x="412.5" y="103">Longest Streak</text>
+    <text class="date" x="412.5" y="127">Oct 20, 2025 - Aug 22</text>
+  </g>
+  <g>
+    <circle class="ring" cx="247.5" cy="74" r="40"/>
+    <text class="num" x="247.5" y="84">307</text>
+    <text class="curr-label" x="247.5" y="140">Current Streak</text>
+    <text class="date" x="247.5" y="162">Oct 20, 2025 - Aug 22</text>
+    <g transform="translate(234.5, 19) scale(1.1)">
+      <!-- Punches a hole in the ring so the flame sits on the ring, not over it. -->
+      <rect x="0" y="9" width="24" height="10" fill="#1a1b27"/>
+      <path class="fire" d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
+    </g>
+  </g>
+</svg>
